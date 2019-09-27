@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 /**
  * 
- * °´Home°´¼üÍË³öÓ¦ÓÃºóÖØĞÂÆô¶¯¸ÃÓ¦ÓÃÎŞ·¨·µ»Øµ½×îºó´ò¿ªÒ³Ãæ½â¾ö·½°¸
+ * æŒ‰HomeæŒ‰é”®é€€å‡ºåº”ç”¨åé‡æ–°å¯åŠ¨è¯¥åº”ç”¨æ— æ³•è¿”å›åˆ°æœ€åæ‰“å¼€é¡µé¢è§£å†³æ–¹æ¡ˆ
  * 
  * @author M
  * 
@@ -16,7 +16,7 @@ public class BaseActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// ÍêÃÀ½â¾ö£ºAPPÏÂÔØ°²×°ºó£¬µã»÷Ö±½Ó´ò¿ª£¬Æô¶¯Ó¦ÓÃºó£¬°´ÏÂHOME¼ü£¬ÔÙ´Îµã»÷×ÀÃæÉÏµÄÓ¦ÓÃ£¬»áÖØÆôÒ»¸öĞÂµÄÓ¦ÓÃÎÊÌâ
+		// å®Œç¾è§£å†³ï¼šAPPä¸‹è½½å®‰è£…åï¼Œç‚¹å‡»ç›´æ¥æ‰“å¼€ï¼Œå¯åŠ¨åº”ç”¨åï¼ŒæŒ‰ä¸‹HOMEé”®ï¼Œå†æ¬¡ç‚¹å‡»æ¡Œé¢ä¸Šçš„åº”ç”¨ï¼Œä¼šé‡å¯ä¸€ä¸ªæ–°çš„åº”ç”¨é—®é¢˜
 		if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0) {
 			// Activity was brought to front and not created,This finishing this will get us to the last viewed activity
 			finish();

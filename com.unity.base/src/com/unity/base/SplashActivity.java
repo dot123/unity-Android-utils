@@ -8,13 +8,13 @@ import android.os.Handler;
 import com.unity.base.Helper.ResourseUtil;
 
 public class SplashActivity extends Activity {
-	// ÑÓ³Ù1.5Ãë
+	// å»¶è¿Ÿ1.5ç§’
 	private static final long SPLASH_DELAY_MILLIS = 1500;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		// ÍêÃÀ½â¾ö£ºAPPÏÂÔØ°²×°ºó£¬µã»÷Ö±½Ó´ò¿ª£¬Æô¶¯Ó¦ÓÃºó£¬°´ÏÂHOME¼ü£¬ÔÙ´Îµã»÷×ÀÃæÉÏµÄÓ¦ÓÃ£¬»áÖØÆôÒ»¸öĞÂµÄÓ¦ÓÃÎÊÌâ
+		// å®Œç¾è§£å†³ï¼šAPPä¸‹è½½å®‰è£…åï¼Œç‚¹å‡»ç›´æ¥æ‰“å¼€ï¼Œå¯åŠ¨åº”ç”¨åï¼ŒæŒ‰ä¸‹HOMEé”®ï¼Œå†æ¬¡ç‚¹å‡»æ¡Œé¢ä¸Šçš„åº”ç”¨ï¼Œä¼šé‡å¯ä¸€ä¸ªæ–°çš„åº”ç”¨é—®é¢˜
 		if ((getIntent().getFlags() & Intent.FLAG_ACTIVITY_BROUGHT_TO_FRONT) != 0) {
 			// Activity was brought to front and not created,This finishing this will get us to the last viewed activity
 			finish();
@@ -22,7 +22,7 @@ public class SplashActivity extends Activity {
 		}
 
 		setContentView(ResourseUtil.getLayoutId(this.getPackageName(), "splash"));
-		// Ê¹ÓÃHandlerµÄpostDelayed·½·¨£¬1.5ÃëºóÖ´ĞĞÌø×ªµ½MainActivity
+		// ä½¿ç”¨Handlerçš„postDelayedæ–¹æ³•ï¼Œ1.5ç§’åæ‰§è¡Œè·³è½¬åˆ°MainActivity
 		new Handler().postDelayed(new Runnable() {
 			public void run() {
 				goHome();
